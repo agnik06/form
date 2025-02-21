@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Form</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form id="registrationForm" novalidate>
+      <label for="firstName">First Name<span class="required">*</span></label>
+      <input type="text" id="firstName" name="firstName" required />
+
+      <label for="lastName">Last Name<span class="required">*</span></label>
+      <input type="text" id="lastName" name="lastName" required />
+
+      <label for="email">Email<span class="required">*</span></label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number<span class="required">*</span></label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" />
+
+      <label>Gender<span class="required">*</span></label>
+      <div class="gender">
+        <label><input type="radio" name="gender" value="Male" required /> Male</label>
+        <label><input type="radio" name="gender" value="Female" /> Female</label>
+        <label><input type="radio" name="gender" value="Other" /> Other</label>
+      </div>
+
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address" />
+
+      <!-- COUNTRY DROPDOWN -->
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="">Select Country</option>
+        <option value="USA">USA</option>
+        <option value="Canada">Canada</option>
+        <option value="UK">UK</option>
+      </select>
+
+      <!-- STATE DROPDOWN (Group States by Country) -->
+      <label for="state">State</label>
+      <select id="state" name="state">
+        <option value="">Select State</option>
+        <!-- USA -->
+        <optgroup label="USA">
+          <option value="California">California</option>
+          <option value="New York">New York</option>
+          <option value="Texas">Texas</option>
+        </optgroup>
+        <!-- Canada -->
+        <optgroup label="Canada">
+          <option value="Ontario">Ontario</option>
+          <option value="Quebec">Quebec</option>
+          <option value="British Columbia">British Columbia</option>
+        </optgroup>
+        <!-- UK -->
+        <optgroup label="UK">
+          <option value="England">England</option>
+          <option value="Scotland">Scotland</option>
+          <option value="Wales">Wales</option>
+        </optgroup>
+      </select>
+
+      <!-- CITY DROPDOWN (Group Cities by State) -->
+      <label for="city">City</label>
+      <select id="city" name="city">
+        <option value="">Select City</option>
+
+        <!-- California -->
+        <optgroup label="California">
+          <option value="Los Angeles">Los Angeles</option>
+          <option value="San Francisco">San Francisco</option>
+          <option value="San Diego">San Diego</option>
+        </optgroup>
+
+        <!-- New York -->
+        <optgroup label="New York">
+          <option value="New York City">New York City</option>
+          <option value="Buffalo">Buffalo</option>
+          <option value="Rochester">Rochester</option>
+        </optgroup>
+
+        <!-- Texas -->
+        <optgroup label="Texas">
+          <option value="Houston">Houston</option>
+          <option value="Dallas">Dallas</option>
+          <option value="Austin">Austin</option>
+        </optgroup>
+
+        <!-- Ontario -->
+        <optgroup label="Ontario">
+          <option value="Toronto">Toronto</option>
+          <option value="Ottawa">Ottawa</option>
+          <option value="Waterloo">Waterloo</option>
+        </optgroup>
+
+        <!-- Quebec -->
+        <optgroup label="Quebec">
+          <option value="Montreal">Montreal</option>
+          <option value="Quebec City">Quebec City</option>
+        </optgroup>
+
+        <!-- British Columbia -->
+        <optgroup label="British Columbia">
+          <option value="Vancouver">Vancouver</option>
+          <option value="Victoria">Victoria</option>
+          <option value="Kelowna">Kelowna</option>
+        </optgroup>
+
+        <!-- England -->
+        <optgroup label="England">
+          <option value="London">London</option>
+          <option value="Manchester">Manchester</option>
+          <option value="Liverpool">Liverpool</option>
+        </optgroup>
+
+        <!-- Scotland -->
+        <optgroup label="Scotland">
+          <option value="Edinburgh">Edinburgh</option>
+          <option value="Glasgow">Glasgow</option>
+          <option value="Aberdeen">Aberdeen</option>
+        </optgroup>
+
+        <!-- Wales -->
+        <optgroup label="Wales">
+          <option value="Cardiff">Cardiff</option>
+          <option value="Swansea">Swansea</option>
+          <option value="Newport">Newport</option>
+        </optgroup>
+      </select>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" />
+
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" />
+
+      <div class="terms">
+        <input type="checkbox" id="terms" required />
+        <span>I agree to the Terms & Conditions</span>
+      </div>
+
+      <button type="submit">Register</button>
+      <p id="message"></p>
+    </form>
+  </div>
+
+  <!-- Link to your JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>

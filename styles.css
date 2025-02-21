@@ -1,0 +1,139 @@
+/* RESET SOME DEFAULT STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* BODY BACKGROUND: Soft, Colorful Gradient */
+  body {
+    font-family: 'Arial', sans-serif;
+    /* Try a teal-blue gradient */
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* CONTAINER: Light "Card" with Transparency & Box Shadow */
+  .container {
+    /* Semi-transparent white background so gradient shows through slightly */
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 500px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .container:hover {
+    transform: scale(1.02);
+  }
+  
+  /* HEADING STYLE */
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  /* LABEL STYLING */
+  label {
+    display: block;
+    margin: 12px 0 5px;
+    text-align: left;
+    color: #333;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  /* REQUIRED ASTERISK */
+  .required {
+    color: #e53935; /* Red color for the asterisk */
+    margin-left: 5px;
+  }
+  
+  /* INPUT AND SELECT FIELDS */
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    color: #333;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.2s ease;
+  }
+  
+  /* FOCUS EFFECT */
+  input:focus,
+  select:focus {
+    border-color: #2193b0;
+    box-shadow: 0 0 8px rgba(33, 147, 176, 0.3);
+  }
+  
+  /* GENDER RADIO BUTTONS */
+  .gender {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  
+  .gender label {
+    font-size: 14px;
+    text-transform: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #333;
+  }
+  
+  /* TERMS CHECKBOX */
+  .terms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 15px 0;
+    color: #333;
+  }
+  
+  /* SUBMIT BUTTON: Vibrant Gradient */
+  button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  /* BUTTON HOVER EFFECT */
+  button:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(255, 94, 98, 0.5);
+  }
+  
+  /* MESSAGE DISPLAY */
+  #message {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    min-height: 20px;
+    transition: opacity 0.5s;
+    color: #333; /* Default color */
+  }
+  

@@ -1,1 +1,1 @@
-clone into vs and run the project, it also includes the screenshots from cypress automation under cypress folder screenshots file.
+clone into vs and run the project, it also includes the screenshots from cypress automation under cypress folder screenshots file, in the vscode run the live server from the index file (in localhost).
